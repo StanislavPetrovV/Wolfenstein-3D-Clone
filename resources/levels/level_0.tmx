@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="256" tileheight="256" infinite="0" nextlayerid="8" nextobjectid="23">
+ <tileset firstgid="1" source="textures.tsx"/>
+ <layer id="2" name="floors" width="16" height="9">
+  <data encoding="csv">
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,8,5,5,5,5,8,5,5,5,5,5,
+5,5,8,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,8,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+</data>
+ </layer>
+ <layer id="3" name="ceilings" width="16" height="9">
+  <data encoding="csv">
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,6,6,5,5,5,6,6,5,5,5,6,6,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,6,6,5,8,5,6,6,5,8,5,6,6,5,5,
+5,5,8,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,6,6,5,5,5,6,6,5,5,5,6,6,8,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+</data>
+ </layer>
+ <layer id="1" name="walls" width="16" height="9">
+  <data encoding="csv">
+1,10,1,1,10,1,10,1,1,10,1,10,1,1,10,1,
+1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,
+10,0,0,0,0,10,0,0,0,0,10,0,0,0,0,10,
+1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,0,1,10,1,0,0,0,0,1,0,0,0,2,10,
+1,0,0,0,0,1,0,0,0,0,10,0,0,0,0,1,
+1,0,0,0,0,1,0,0,0,0,1,0,0,0,2,1,
+1,10,1,1,10,1,10,1,1,10,1,10,1,1,10,1
+</data>
+ </layer>
+ <objectgroup id="4" name="player">
+  <object id="1" name="PLAYER" x="399.394" y="821.366" width="80" height="17.875">
+   <text wrap="1">Hello World</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="6" gid="14" x="512" y="512" width="256" height="256"/>
+  <object id="7" gid="17" x="2304" y="512" width="256" height="256"/>
+  <object id="14" gid="15" x="1024" y="2048" width="256" height="256"/>
+  <object id="22" gid="13" x="2304" y="2048" width="256" height="256"/>
+ </objectgroup>
+ <objectgroup id="6" name="npc">
+  <object id="13" gid="68" x="512" y="2048" width="256" height="256"/>
+  <object id="15" gid="46" x="1792" y="768" width="256" height="256"/>
+  <object id="16" gid="46" x="2048" y="1280" width="256" height="256"/>
+  <object id="17" gid="46" x="1792" y="2048" width="256" height="256"/>
+  <object id="18" gid="46" x="3584" y="1024" width="256" height="256"/>
+  <object id="19" gid="46" x="2816" y="768" width="256" height="256"/>
+  <object id="20" gid="46" x="3072" y="1536" width="256" height="256"/>
+ </objectgroup>
+ <objectgroup id="7" name="doors">
+  <object id="2" gid="7" x="2560" y="1280" width="256" height="256"/>
+  <object id="3" gid="7" x="1280" y="1280" width="256" height="256"/>
+  <object id="4" gid="7" x="512" y="1536" width="256" height="256"/>
+  <object id="21" gid="9" x="3584" y="1792" width="256" height="256"/>
+ </objectgroup>
+</map>
