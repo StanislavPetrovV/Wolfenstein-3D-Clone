@@ -19,7 +19,6 @@ class PlayerAttribs:
         self.weapon_id = player.weapon_id
 
 
-
 class Player(Camera):
     def __init__(self, eng, position=PLAYER_POS, yaw=0, pitch=0):
         self.app = eng.app
@@ -171,7 +170,7 @@ class Player(Camera):
             door.is_closed = not door.is_closed
             self.play(self.sound.player_missed)
             # next level
-            pg.time.wait(3000)
+            pg.time.wait(300)
             #
             self.eng.player_attribs.update(player=self)
             self.eng.player_attribs.num_level += 1
