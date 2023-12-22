@@ -100,6 +100,9 @@ class Player(Camera):
             npc = self.eng.level_map.npc_map[npc_pos]
             npc.get_damage()
 
+    def get_damage(self, value):
+        self.health = max(self.health - value, 0)
+
     def switch_weapon(self, weapon_id):
         if self.weapons[weapon_id]:
             self.weapon_instance.weapon_id = self.weapon_id = weapon_id
